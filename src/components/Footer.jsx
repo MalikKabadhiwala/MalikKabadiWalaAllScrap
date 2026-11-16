@@ -48,40 +48,40 @@ export default function Footer() {
   return (
     <>
       {/* Top Feature Bar with White Background */}
-      <section className="bg-white py-14 border-t border-b border-slate-200">
+      <section className="bg-white py-12 sm:py-16 border-t border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#023440] hover:shadow-md transition-all">
-              <div className="w-12 h-12 rounded-xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shrink-0 shadow-sm">
-                <Scale className="w-6 h-6" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <div className="flex items-start space-x-4 sm:space-x-5 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm hover:border-[#023440] hover:shadow-xl transition-all">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shrink-0 shadow-sm">
+                <Scale className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
               <div>
-                <h4 className="font-extrabold text-[#023440] text-base sm:text-lg">Certified Digital Scales</h4>
-                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed font-normal">
+                <h4 className="font-extrabold text-[#023440] text-lg sm:text-xl font-heading leading-snug">Certified Digital Scales</h4>
+                <p className="text-sm sm:text-base text-slate-600 mt-1.5 sm:mt-2 leading-relaxed font-normal">
                   100% transparent electronic weighing right at your doorstep. No manual spring cheating.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#023440] hover:shadow-md transition-all">
-              <div className="w-12 h-12 rounded-xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shrink-0 shadow-sm">
-                <ShieldCheck className="w-6 h-6" />
+            <div className="flex items-start space-x-4 sm:space-x-5 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm hover:border-[#023440] hover:shadow-xl transition-all">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shrink-0 shadow-sm">
+                <ShieldCheck className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
               <div>
-                <h4 className="font-extrabold text-[#023440] text-base sm:text-lg">Instant Cash & Digital UPI Payout</h4>
-                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed font-normal">
+                <h4 className="font-extrabold text-[#023440] text-lg sm:text-xl font-heading leading-snug">Instant Cash & Digital UPI Payout</h4>
+                <p className="text-sm sm:text-base text-slate-600 mt-1.5 sm:mt-2 leading-relaxed font-normal">
                   Receive immediate settlement on the spot via Cash, Google Pay, PhonePe, or Bank Transfer.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-[#023440] hover:shadow-md transition-all">
-              <div className="w-12 h-12 rounded-xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shrink-0 shadow-sm">
-                <HeartHandshake className="w-6 h-6" />
+            <div className="flex items-start space-x-4 sm:space-x-5 bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm hover:border-[#023440] hover:shadow-xl transition-all">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shrink-0 shadow-sm">
+                <HeartHandshake className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
               <div>
-                <h4 className="font-extrabold text-[#023440] text-base sm:text-lg">Zero Doorstep Pickup Fee</h4>
-                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed font-normal">
+                <h4 className="font-extrabold text-[#023440] text-lg sm:text-xl font-heading leading-snug">Zero Doorstep Pickup Fee</h4>
+                <p className="text-sm sm:text-base text-slate-600 mt-1.5 sm:mt-2 leading-relaxed font-normal">
                   Free inspection, free doorstep visit, and free loading across Noida Sector 58 and NCR.
                 </p>
               </div>
