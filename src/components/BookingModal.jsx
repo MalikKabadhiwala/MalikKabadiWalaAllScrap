@@ -68,40 +68,44 @@ Please confirm my free doorstep scrap pickup slot!`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-sm animate-fade-in overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-white rounded-2xl sm:rounded-3xl shadow-2xl border-2 border-[#023440] overflow-hidden max-h-[92vh] sm:max-h-[90vh] flex flex-col my-auto">
+      <div className="relative w-full max-w-xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border-2 border-[#023440] overflow-hidden max-h-[92vh] sm:max-h-[90vh] flex flex-col my-auto">
         {/* Header in #023440 & #f0edcc */}
-        <div className="bg-[#023440] px-4 py-3.5 sm:px-6 sm:py-4 text-white flex items-center justify-between border-b border-[#f0edcc]/30 shrink-0">
+        <div className="bg-[#023440] px-5 py-4 sm:px-7 sm:py-5 text-white flex items-center justify-between border-b border-[#f0edcc]/30 shrink-0">
           <div className="min-w-0 pr-2">
-            <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-2 sm:px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-black mb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#f0edcc] animate-pulse"></span>
+            <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-3 py-1 rounded-full text-xs sm:text-sm font-black mb-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#f0edcc] animate-pulse"></span>
               <span>100% Free Doorstep Collection</span>
             </div>
-            <h3 className="text-base sm:text-xl font-bold font-heading text-white truncate">Schedule Scrap Pickup</h3>
-            <p className="text-[#f0edcc]/80 text-[10px] sm:text-xs truncate">Digital scales • Instant Cash or UPI settlement</p>
+            <h3 className="text-xl sm:text-2xl font-black font-heading text-white tracking-tight truncate">
+              Schedule Scrap Pickup
+            </h3>
+            <p className="text-[#f0edcc] text-xs sm:text-sm font-medium mt-0.5">
+              Digital scales • Instant Cash or UPI settlement
+            </p>
           </div>
           <button 
             onClick={() => setIsOpen(false)}
             aria-label="Close modal"
-            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-[#f0edcc] hover:text-[#023440] text-white flex items-center justify-center transition-colors shrink-0"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-[#f0edcc] hover:text-[#023440] text-white flex items-center justify-center transition-colors shrink-0"
           >
-            <X className="w-4 h-4 sm:w-5 sm:h-5" />
+            <X className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
 
         {/* Form Body */}
-        <div className="p-4 sm:p-6 overflow-y-auto overscroll-contain">
+        <div className="p-5 sm:p-7 overflow-y-auto overscroll-contain">
           {isSubmitted ? (
-            <div className="py-6 sm:py-8 text-center space-y-3 bg-[#f0edcc]/30 rounded-2xl p-4 sm:p-6">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#023440] text-[#f0edcc] flex items-center justify-center mx-auto shadow-md">
-                <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10" />
+            <div className="py-8 sm:py-10 text-center space-y-4 bg-[#f0edcc]/30 rounded-2xl p-6">
+              <div className="w-16 h-16 rounded-full bg-[#023440] text-[#f0edcc] flex items-center justify-center mx-auto shadow-md">
+                <CheckCircle2 className="w-10 h-10" />
               </div>
-              <h4 className="text-base sm:text-lg font-bold text-[#023440]">Booking Sent to WhatsApp!</h4>
-              <p className="text-xs sm:text-sm text-slate-600 max-w-xs mx-auto">
+              <h4 className="text-xl sm:text-2xl font-bold text-[#023440]">Booking Sent to WhatsApp!</h4>
+              <p className="text-sm sm:text-base text-slate-700 max-w-sm mx-auto">
                 Our team at Malik Kabadi Wala (Sector 58, Bishanpura) will confirm your time slot shortly.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-3.5 sm:space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div>
                 <label className="block text-xs sm:text-sm font-extrabold text-[#023440] uppercase tracking-wider mb-1.5">
                   Your Full Name *
@@ -113,17 +117,17 @@ Please confirm my free doorstep scrap pickup slot!`;
                   placeholder="e.g. Rahul Sharma"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-3.5 sm:px-4 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
                 />
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                 <div>
                   <label className="block text-xs sm:text-sm font-extrabold text-[#023440] uppercase tracking-wider mb-1.5">
                     Phone Number *
                   </label>
                   <div className="relative">
-                    <Phone className="w-4 h-4 absolute left-3 top-3.5 text-slate-400 pointer-events-none" />
+                    <Phone className="w-4 h-4 absolute left-3.5 top-4 text-slate-400 pointer-events-none" />
                     <input
                       type="tel"
                       name="phone"
@@ -131,7 +135,7 @@ Please confirm my free doorstep scrap pickup slot!`;
                       placeholder="98765 43210"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full pl-9 pr-3.5 sm:pr-4 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
+                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
                     />
                   </div>
                 </div>
@@ -141,13 +145,13 @@ Please confirm my free doorstep scrap pickup slot!`;
                     Preferred Pickup Date *
                   </label>
                   <div className="relative">
-                    <Calendar className="w-4 h-4 absolute left-3 top-3.5 text-slate-400 pointer-events-none" />
+                    <Calendar className="w-4 h-4 absolute left-3.5 top-4 text-slate-400 pointer-events-none" />
                     <input
                       type="date"
                       name="pickupDate"
                       value={formData.pickupDate}
                       onChange={handleChange}
-                      className="w-full pl-9 pr-3.5 sm:pr-4 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white font-medium"
+                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white font-medium"
                     />
                   </div>
                 </div>
@@ -158,7 +162,7 @@ Please confirm my free doorstep scrap pickup slot!`;
                   Noida Sector / Locality Address *
                 </label>
                 <div className="relative">
-                  <MapPin className="w-4 h-4 absolute left-3 top-3.5 text-slate-400 pointer-events-none" />
+                  <MapPin className="w-4 h-4 absolute left-3.5 top-4 text-slate-400 pointer-events-none" />
                   <input
                     type="text"
                     name="sector"
@@ -166,12 +170,12 @@ Please confirm my free doorstep scrap pickup slot!`;
                     placeholder="e.g. Bishanpura, Sector 58, Flat/House No..."
                     value={formData.sector}
                     onChange={handleChange}
-                    className="w-full pl-9 pr-3.5 sm:pr-4 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
+                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                 <div>
                   <label className="block text-xs sm:text-sm font-extrabold text-[#023440] uppercase tracking-wider mb-1.5">
                     Scrap Category *
@@ -180,7 +184,7 @@ Please confirm my free doorstep scrap pickup slot!`;
                     name="scrapType"
                     value={formData.scrapType}
                     onChange={handleChange}
-                    className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440] font-medium"
+                    className="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440] font-medium"
                   >
                     <option value="Mixed Metal & Paper Scrap">Mixed Metal & Paper Scrap</option>
                     <option value="Iron & Steel Scrap">Iron & Steel Scrap</option>
@@ -201,7 +205,7 @@ Please confirm my free doorstep scrap pickup slot!`;
                     name="weight"
                     value={formData.weight}
                     onChange={handleChange}
-                    className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440] font-medium"
+                    className="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440] font-medium"
                   >
                     <option value="20-50 kg">20 - 50 kg</option>
                     <option value="50-100 kg">50 - 100 kg</option>
@@ -223,19 +227,19 @@ Please confirm my free doorstep scrap pickup slot!`;
                   placeholder="e.g. 2nd floor with lift, copper wire and iron gate"
                   value={formData.notes}
                   onChange={handleChange}
-                  className="w-full px-3.5 sm:px-4 py-2.5 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400 font-medium"
                 />
               </div>
 
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3.5 px-5 rounded-xl bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-black text-sm sm:text-base shadow-xl flex items-center justify-center space-x-2 transition-all transform active:scale-[0.99] border border-[#f0edcc]/30"
+                  className="w-full py-4 px-5 rounded-xl bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-black text-base sm:text-lg shadow-xl flex items-center justify-center space-x-2 transition-all transform active:scale-[0.99] border border-[#f0edcc]/30"
                 >
                   <span>Confirm Pickup via WhatsApp</span>
                   <Package className="w-5 h-5 ml-1 text-[#f0edcc]" />
                 </button>
-                <p className="text-center text-xs text-slate-600 mt-2 font-medium flex items-center justify-center space-x-1.5 leading-snug">
+                <p className="text-center text-xs sm:text-sm text-slate-600 mt-2.5 font-medium flex items-center justify-center space-x-1.5 leading-snug">
                   <ShieldCheck className="w-4 h-4 text-[#023440] shrink-0" />
                   <span>Zero pickup charges • Digital scales • Instant spot Cash or UPI payout</span>
                 </p>
