@@ -26,32 +26,32 @@ My location is in Noida. Please let me know when your doorstep pickup team can a
   };
 
   return (
-    <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-[#023440] relative overflow-hidden">
+    <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-2xl border-2 border-[#023440] relative overflow-hidden">
       {/* Decorative top ribbon in #023440 & #f0edcc */}
-      <div className="absolute top-0 right-0 bg-[#023440] text-[#f0edcc] text-[11px] font-black px-4 py-1.5 rounded-bl-xl shadow-xs border-b border-l border-[#f0edcc]/30 inline-flex items-center space-x-1.5">
+      <div className="absolute top-0 right-0 bg-[#023440] text-[#f0edcc] text-[10px] sm:text-[11px] font-black px-3 sm:px-4 py-1 sm:py-1.5 rounded-bl-xl shadow-xs border-b border-l border-[#f0edcc]/30 inline-flex items-center space-x-1.5">
         <Zap className="w-3 h-3 text-[#f0edcc] fill-[#f0edcc]" />
         <span>Live Market Rates</span>
       </div>
 
-      <div className="flex items-center space-x-3 mb-6">
-        <div className="w-11 h-11 rounded-xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shadow-sm">
-          <Calculator className="w-6 h-6" />
+      <div className="flex items-center space-x-3 mb-5 sm:mb-6 mt-1 sm:mt-0">
+        <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#023440] text-[#f0edcc] flex items-center justify-center shadow-sm shrink-0">
+          <Calculator className="w-5 h-5 sm:w-6 sm:h-6" />
         </div>
         <div>
-          <h3 className="text-xl font-bold font-heading text-[#023440]">Instant Scrap Rate Calculator</h3>
-          <p className="text-xs text-slate-500">Calculate your estimated cash payout right now</p>
+          <h3 className="text-lg sm:text-xl font-bold font-heading text-[#023440] leading-snug">Instant Scrap Rate Calculator</h3>
+          <p className="text-[11px] sm:text-xs text-slate-500">Calculate your estimated cash payout right now</p>
         </div>
       </div>
 
-      <div className="space-y-5">
+      <div className="space-y-4 sm:space-y-5">
         <div>
-          <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-2">
+          <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5 sm:mb-2">
             Select Scrap Material
           </label>
           <select
             value={selectedId}
             onChange={(e) => setSelectedId(e.target.value)}
-            className="w-full px-4 py-3 rounded-xl border border-slate-300 text-[#023440] text-sm font-semibold focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none bg-slate-50"
+            className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-slate-300 text-[#023440] text-base sm:text-sm font-semibold focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none bg-slate-50 transition-all"
           >
             {scrapRatesData.map(item => (
               <option key={item.id} value={item.id}>
@@ -62,11 +62,11 @@ My location is in Noida. Please let me know when your doorstep pickup team can a
         </div>
 
         <div>
-          <div className="flex items-center justify-between mb-2">
-            <label className="text-xs font-bold text-[#023440] uppercase tracking-wider">
+          <div className="flex flex-wrap items-center justify-between gap-1 mb-1.5 sm:mb-2">
+            <label className="text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider">
               Approx Quantity ({selectedItem.unit === 'kg' ? 'Kilograms' : 'Pieces'})
             </label>
-            <span className="text-xs font-bold text-[#023440] bg-[#f0edcc] px-2.5 py-1 rounded-md">
+            <span className="text-[11px] sm:text-xs font-bold text-[#023440] bg-[#f0edcc] px-2.5 py-0.5 sm:py-1 rounded-md">
               Rate: ₹{selectedItem.rate} / {selectedItem.unit}
             </span>
           </div>
@@ -77,7 +77,7 @@ My location is in Noida. Please let me know when your doorstep pickup team can a
               min="1"
               value={quantity}
               onChange={(e) => setQuantity(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-[#023440] font-bold text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none bg-slate-50"
+              className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-slate-300 text-[#023440] font-bold text-base focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none bg-slate-50 transition-all"
             />
             <span className="text-sm font-bold text-[#023440] shrink-0">
               {selectedItem.unit === 'kg' ? 'KG' : 'Pcs'}
@@ -85,7 +85,7 @@ My location is in Noida. Please let me know when your doorstep pickup team can a
           </div>
 
           {/* Quick Quantity presets */}
-          <div className="flex items-center space-x-2 mt-2.5">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mt-2">
             <span className="text-[11px] text-slate-500 font-medium">Quick Pick:</span>
             {[20, 50, 100, 250].map((preset) => (
               <button
@@ -101,17 +101,17 @@ My location is in Noida. Please let me know when your doorstep pickup team can a
         </div>
 
         {/* Calculation Result Card in #023440 and #f0edcc */}
-        <div className="p-6 rounded-2xl bg-[#023440] text-white border border-[#f0edcc]/40 shadow-lg">
-          <div className="flex items-center justify-between">
+        <div className="p-4 sm:p-6 rounded-2xl bg-[#023440] text-white border border-[#f0edcc]/40 shadow-lg">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <div>
               <span className="text-xs font-extrabold uppercase tracking-wider text-[#f0edcc]">
                 Estimated Cash Payout
               </span>
-              <p className="text-[11px] text-[#f0edcc]/80 mt-0.5">
+              <p className="text-[10px] sm:text-[11px] text-[#f0edcc]/80 mt-0.5">
                 Paid on the spot via Cash or UPI at your doorstep
               </p>
             </div>
-            <div className="text-right">
+            <div className="text-left sm:text-right">
               <span className="text-2xl sm:text-3xl font-black text-[#f0edcc] tracking-tight">
                 ₹ {estimatedAmount.toLocaleString('en-IN')}
               </span>
@@ -121,13 +121,13 @@ My location is in Noida. Please let me know when your doorstep pickup team can a
 
         <button
           onClick={handleWhatsAppBooking}
-          className="w-full py-4 px-6 rounded-xl bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-black text-sm shadow-xl flex items-center justify-center space-x-2 transition-all transform active:scale-[0.99] border border-[#f0edcc]/30"
+          className="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-xl bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-black text-xs sm:text-sm shadow-xl flex items-center justify-center space-x-2 transition-all transform active:scale-[0.99] border border-[#f0edcc]/30"
         >
-          <MessageCircle className="w-5 h-5 text-[#f0edcc]" />
+          <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#f0edcc]" />
           <span>Sell on WhatsApp at this Rate</span>
         </button>
 
-        <div className="flex items-center justify-center space-x-4 text-[11px] text-slate-600 pt-1 font-semibold">
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] text-slate-600 pt-1 font-semibold">
           <span className="flex items-center"><CheckCircle2 className="w-3.5 h-3.5 text-[#023440] mr-1" /> Zero Pickup Charges</span>
           <span className="flex items-center"><CheckCircle2 className="w-3.5 h-3.5 text-[#023440] mr-1" /> Digital Weight</span>
         </div>

@@ -67,42 +67,43 @@ Please confirm my free doorstep scrap pickup slot!`;
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-fade-in">
-      <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border-2 border-[#023440] overflow-hidden max-h-[92vh] flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-sm animate-fade-in overflow-y-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-2xl sm:rounded-3xl shadow-2xl border-2 border-[#023440] overflow-hidden max-h-[92vh] sm:max-h-[90vh] flex flex-col my-auto">
         {/* Header in #023440 & #f0edcc */}
-        <div className="bg-[#023440] px-6 py-5 text-white flex items-center justify-between border-b border-[#f0edcc]/30">
-          <div>
-            <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-2.5 py-0.5 rounded-full text-xs font-black mb-1">
-              <span className="w-2 h-2 rounded-full bg-[#f0edcc] animate-pulse"></span>
+        <div className="bg-[#023440] px-4 py-3.5 sm:px-6 sm:py-4 text-white flex items-center justify-between border-b border-[#f0edcc]/30 shrink-0">
+          <div className="min-w-0 pr-2">
+            <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-2 sm:px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-black mb-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#f0edcc] animate-pulse"></span>
               <span>100% Free Doorstep Collection</span>
             </div>
-            <h3 className="text-xl font-bold font-heading text-white">Schedule Scrap Pickup</h3>
-            <p className="text-[#f0edcc]/80 text-xs">Digital weighing scales and instant Cash or UPI settlement</p>
+            <h3 className="text-base sm:text-xl font-bold font-heading text-white truncate">Schedule Scrap Pickup</h3>
+            <p className="text-[#f0edcc]/80 text-[10px] sm:text-xs truncate">Digital scales • Instant Cash or UPI settlement</p>
           </div>
           <button 
             onClick={() => setIsOpen(false)}
-            className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#f0edcc] hover:text-[#023440] text-white flex items-center justify-center transition-colors"
+            aria-label="Close modal"
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-[#f0edcc] hover:text-[#023440] text-white flex items-center justify-center transition-colors shrink-0"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
         {/* Form Body */}
-        <div className="p-6 overflow-y-auto">
+        <div className="p-4 sm:p-6 overflow-y-auto overscroll-contain">
           {isSubmitted ? (
-            <div className="py-8 text-center space-y-3 bg-[#f0edcc]/30 rounded-2xl p-6">
-              <div className="w-16 h-16 rounded-full bg-[#023440] text-[#f0edcc] flex items-center justify-center mx-auto shadow-md">
-                <CheckCircle2 className="w-10 h-10" />
+            <div className="py-6 sm:py-8 text-center space-y-3 bg-[#f0edcc]/30 rounded-2xl p-4 sm:p-6">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#023440] text-[#f0edcc] flex items-center justify-center mx-auto shadow-md">
+                <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10" />
               </div>
-              <h4 className="text-lg font-bold text-[#023440]">Booking Sent to WhatsApp!</h4>
-              <p className="text-sm text-slate-600 max-w-xs mx-auto">
+              <h4 className="text-base sm:text-lg font-bold text-[#023440]">Booking Sent to WhatsApp!</h4>
+              <p className="text-xs sm:text-sm text-slate-600 max-w-xs mx-auto">
                 Our team at Malik Kabadi Wala (Sector 58, Bishanpura) will confirm your time slot shortly.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
               <div>
-                <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                   Your Full Name *
                 </label>
                 <input
@@ -112,17 +113,17 @@ Please confirm my free doorstep scrap pickup slot!`;
                   placeholder="e.g. Rahul Sharma"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440]"
+                  className="w-full px-3.5 sm:px-4 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400"
                 />
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div>
-                  <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                  <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                     Phone Number *
                   </label>
                   <div className="relative">
-                    <Phone className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+                    <Phone className="w-4 h-4 absolute left-3 top-3.5 text-slate-400 pointer-events-none" />
                     <input
                       type="tel"
                       name="phone"
@@ -130,34 +131,34 @@ Please confirm my free doorstep scrap pickup slot!`;
                       placeholder="98765 43210"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440]"
+                      className="w-full pl-9 pr-3.5 sm:pr-4 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                  <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                     Preferred Pickup Date *
                   </label>
                   <div className="relative">
-                    <Calendar className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+                    <Calendar className="w-4 h-4 absolute left-3 top-3.5 text-slate-400 pointer-events-none" />
                     <input
                       type="date"
                       name="pickupDate"
                       value={formData.pickupDate}
                       onChange={handleChange}
-                      className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440]"
+                      className="w-full pl-9 pr-3.5 sm:pr-4 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white"
                     />
                   </div>
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                   Noida Sector / Locality Address *
                 </label>
                 <div className="relative">
-                  <MapPin className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+                  <MapPin className="w-4 h-4 absolute left-3 top-3.5 text-slate-400 pointer-events-none" />
                   <input
                     type="text"
                     name="sector"
@@ -165,42 +166,42 @@ Please confirm my free doorstep scrap pickup slot!`;
                     placeholder="e.g. Bishanpura, Sector 58, Flat/House No..."
                     value={formData.sector}
                     onChange={handleChange}
-                    className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440]"
+                    className="w-full pl-9 pr-3.5 sm:pr-4 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div>
-                  <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                  <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                     Scrap Category *
                   </label>
                   <select
                     name="scrapType"
                     value={formData.scrapType}
                     onChange={handleChange}
-                    className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440]"
+                    className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440]"
                   >
                     <option value="Mixed Metal & Paper Scrap">Mixed Metal & Paper Scrap</option>
                     <option value="Iron & Steel Scrap">Iron & Steel Scrap</option>
                     <option value="Copper & Brass Scrap">Copper & Brass Scrap</option>
                     <option value="Newspaper & Cardboard Scrap">Newspaper & Cardboard Scrap</option>
                     <option value="Inverter & Automotive Batteries">Inverter & Automotive Batteries</option>
-                    <option value="Scrap AC / Refrigerator / Washing Machine">Scrap Appliance Bodies (AC/Fridge/Washing Machine)</option>
+                    <option value="Scrap AC / Refrigerator / Washing Machine">Scrap Appliance Bodies</option>
                     <option value="E-Waste & Scrap Computers">E-Waste & Scrap Computers</option>
                     <option value="Commercial Office / Factory Scrap">Commercial Office / Factory Scrap</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                  <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                     Estimated Weight *
                   </label>
                   <select
                     name="weight"
                     value={formData.weight}
                     onChange={handleChange}
-                    className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440]"
+                    className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all bg-white text-[#023440]"
                   >
                     <option value="20-50 kg">20 - 50 kg</option>
                     <option value="50-100 kg">50 - 100 kg</option>
@@ -213,7 +214,7 @@ Please confirm my free doorstep scrap pickup slot!`;
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[#023440] uppercase tracking-wider mb-1.5">
+                <label className="block text-[11px] sm:text-xs font-bold text-[#023440] uppercase tracking-wider mb-1 sm:mb-1.5">
                   Additional Notes / Landmarks (Optional)
                 </label>
                 <input
@@ -222,21 +223,21 @@ Please confirm my free doorstep scrap pickup slot!`;
                   placeholder="e.g. 2nd floor with lift, copper wire and iron gate"
                   value={formData.notes}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440]"
+                  className="w-full px-3.5 sm:px-4 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none transition-all text-[#023440] bg-white placeholder:text-slate-400"
                 />
               </div>
 
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-4 px-6 rounded-xl bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-black text-sm shadow-xl flex items-center justify-center space-x-2 transition-all transform active:scale-[0.99] border border-[#f0edcc]/30"
+                  className="w-full py-3.5 px-5 rounded-xl bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-black text-xs sm:text-sm shadow-xl flex items-center justify-center space-x-2 transition-all transform active:scale-[0.99] border border-[#f0edcc]/30"
                 >
                   <span>Confirm Pickup via WhatsApp</span>
                   <Package className="w-4 h-4 ml-1 text-[#f0edcc]" />
                 </button>
-                <p className="text-center text-[11px] text-slate-500 mt-2 font-medium flex items-center justify-center space-x-1.5">
+                <p className="text-center text-[10px] sm:text-[11px] text-slate-500 mt-2 font-medium flex items-center justify-center space-x-1.5 leading-snug">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#023440] shrink-0" />
-                  <span>Zero pickup charges • Digital scales • Instant spot Cash or UPI settlement</span>
+                  <span>Zero pickup charges • Digital scales • Instant spot Cash or UPI payout</span>
                 </p>
               </div>
             </form>
