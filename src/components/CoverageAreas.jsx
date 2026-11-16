@@ -68,7 +68,7 @@ export default function CoverageAreas() {
                 placeholder="Enter Sector (e.g. 58, 62, Indirapuram, 201301)..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none text-[#023440]"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:border-[#023440] focus:ring-2 focus:ring-[#f0edcc] outline-none text-[#023440] bg-white transition-all placeholder:text-slate-400"
               />
             </div>
             <button
@@ -104,36 +104,36 @@ export default function CoverageAreas() {
         </div>
 
         {/* Localities Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-4">
           {noidaLocalities.map((loc, idx) => (
             <div
               key={idx}
-              className="p-4 bg-white rounded-2xl border border-slate-200 hover:border-[#023440] transition-all flex items-center space-x-3 shadow-xs"
+              className="p-4 sm:p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#023440] hover:shadow-md transition-all flex items-center space-x-3.5 shadow-xs"
             >
-              <div className="w-8 h-8 rounded-xl bg-[#f0edcc] text-[#023440] flex items-center justify-center shrink-0 font-bold">
-                <MapPin className="w-4 h-4" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#f0edcc] text-[#023440] flex items-center justify-center shrink-0 font-bold">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <div>
-                <h4 className="font-bold text-[#023440] text-xs sm:text-sm">{loc.name}</h4>
-                <span className="text-[11px] text-[#054756] font-semibold block">{loc.status}</span>
+              <div className="min-w-0">
+                <h4 className="font-bold text-[#023440] text-sm sm:text-base leading-snug font-heading truncate">{loc.name}</h4>
+                <span className="text-xs sm:text-sm text-[#054756] font-semibold block mt-0.5 truncate">{loc.status}</span>
               </div>
             </div>
           ))}
         </div>
 
         {/* Hub Notice Banner in #023440 & #f0edcc */}
-        <div className="mt-10 p-6 bg-[#023440] text-white rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-4 border border-[#f0edcc]/30 shadow-xl">
-          <div className="flex items-center space-x-3.5">
-            <div className="w-10 h-10 rounded-xl bg-[#f0edcc] text-[#023440] flex items-center justify-center shrink-0">
-              <Zap className="w-5 h-5" />
+        <div className="mt-10 sm:mt-12 p-6 sm:p-7 bg-[#023440] text-white rounded-2xl sm:rounded-3xl flex flex-col md:flex-row items-center justify-between gap-5 border border-[#f0edcc]/30 shadow-xl">
+          <div className="flex items-center space-x-3.5 sm:space-x-4">
+            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#f0edcc] text-[#023440] flex items-center justify-center shrink-0 shadow-sm">
+              <Zap className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <p className="text-xs sm:text-sm">
-              <strong className="text-[#f0edcc]">Locally Based in Bishanpura Sector 58:</strong> Express 30-minute arrival guaranteed for Sector 58, 59, 60, 61, 62 & 63.
+            <p className="text-sm sm:text-base leading-relaxed text-slate-100">
+              <strong className="text-[#f0edcc] font-extrabold text-base sm:text-lg block sm:inline sm:mr-1">Locally Based in Bishanpura Sector 58:</strong>Express 30-minute arrival guaranteed for Sector 58, 59, 60, 61, 62 & 63.
             </p>
           </div>
           <a
             href="tel:9599122595"
-            className="px-6 py-2.5 bg-[#f0edcc] hover:bg-white text-[#023440] font-black text-xs rounded-xl transition-colors shrink-0 shadow-md"
+            className="px-6 py-3 sm:py-3.5 bg-[#f0edcc] hover:bg-white text-[#023440] font-black text-sm sm:text-base rounded-xl transition-all shrink-0 shadow-lg text-center w-full sm:w-auto"
           >
             Express Pickup: 9599122595
           </a>
