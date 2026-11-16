@@ -201,7 +201,7 @@ export default function Navbar() {
               {/* Mega Dropdown Menu Bar (Opens below navbar matching reference styling) */}
               {servicesDropdown && (
                 <div 
-                  className="absolute top-full left-1/2 -translate-x-1/2 w-[92vw] max-w-4xl lg:max-w-5xl bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 sm:p-8 z-50 text-slate-800 animate-fade-in before:content-[''] before:absolute before:-top-4 before:left-0 before:right-0 before:h-4"
+                  className="absolute top-full left-1/2 -translate-x-1/2 w-[94vw] max-w-5xl lg:max-w-6xl bg-white rounded-2xl shadow-2xl border-2 border-slate-200 p-6 sm:p-8 z-50 text-slate-800 animate-fade-in before:content-[''] before:absolute before:-top-4 before:left-0 before:right-0 before:h-4"
                   onMouseEnter={() => setServicesDropdown(true)}
                   onMouseLeave={() => setServicesDropdown(false)}
                 >
@@ -209,29 +209,29 @@ export default function Navbar() {
                     
                     {/* Left Panel: Scrap Collection Services */}
                     <div className="md:pr-6">
-                      <div className="flex items-center space-x-3.5 mb-4">
+                      <div className="flex items-center space-x-3.5 mb-5">
                         <div className="w-12 h-12 rounded-xl bg-[#023440]/10 flex items-center justify-center text-[#023440] shrink-0 shadow-xs">
                           <Scale className="w-6 h-6 text-[#023440]" />
                         </div>
                         <div>
-                          <h4 className="text-base sm:text-lg font-black text-[#023440] font-heading">
+                          <h4 className="text-lg sm:text-xl font-black text-[#023440] font-heading">
                             Scrap Collection Services
                           </h4>
-                          <p className="text-xs text-slate-500 font-medium">
+                          <p className="text-xs sm:text-sm text-slate-600 font-medium">
                             Doorstep scrap collection & digital weighing
                           </p>
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 pt-2">
+                      <div className="grid grid-cols-2 gap-x-4 gap-y-3 pt-1">
                         {serviceCategories.map((service, idx) => (
                           <Link
                             key={`srv-${idx}`}
                             href={service.href}
                             onClick={() => setServicesDropdown(false)}
-                            className="flex items-center space-x-2 text-xs sm:text-[13px] text-slate-700 hover:text-[#023440] font-semibold py-1 transition-colors group"
+                            className="flex items-center space-x-2.5 text-sm sm:text-base text-slate-800 hover:text-[#023440] font-bold py-1 transition-colors group"
                           >
-                            <Recycle className="w-3.5 h-3.5 text-[#023440]/70 group-hover:text-[#023440] group-hover:scale-110 transition-transform shrink-0" />
+                            <Recycle className="w-4 h-4 text-[#023440] group-hover:scale-110 transition-transform shrink-0" />
                             <span className="truncate">{service.title}</span>
                           </Link>
                         ))}
@@ -240,29 +240,29 @@ export default function Navbar() {
 
                     {/* Right Panel: Noida Pickup Locations */}
                     <div className="pt-6 md:pt-0 md:pl-6">
-                      <div className="flex items-center space-x-3.5 mb-4">
+                      <div className="flex items-center space-x-3.5 mb-5">
                         <div className="w-12 h-12 rounded-xl bg-[#f0edcc] flex items-center justify-center text-[#023440] shrink-0 shadow-xs">
                           <MapPin className="w-6 h-6 text-[#023440]" />
                         </div>
                         <div>
-                          <h4 className="text-base sm:text-lg font-black text-[#023440] font-heading">
+                          <h4 className="text-lg sm:text-xl font-black text-[#023440] font-heading">
                             Noida Scrap Pickup Areas
                           </h4>
-                          <p className="text-xs text-slate-500 font-medium">
+                          <p className="text-xs sm:text-sm text-slate-600 font-medium">
                             Fast doorstep pickup across Noida & NCR
                           </p>
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 pt-2">
+                      <div className="grid grid-cols-2 gap-x-4 gap-y-3 pt-1">
                         {pickupLocalities.map((locality, idx) => (
                           <Link
                             key={`loc-${idx}`}
                             href={locality.href}
                             onClick={() => setServicesDropdown(false)}
-                            className="flex items-center space-x-2 text-xs sm:text-[13px] text-slate-700 hover:text-[#023440] font-semibold py-1 transition-colors group"
+                            className="flex items-center space-x-2.5 text-sm sm:text-base text-slate-800 hover:text-[#023440] font-bold py-1 transition-colors group"
                           >
-                            <MapPin className="w-3.5 h-3.5 text-[#023440]/70 group-hover:text-[#023440] group-hover:scale-110 transition-transform shrink-0" />
+                            <MapPin className="w-4 h-4 text-[#023440] group-hover:scale-110 transition-transform shrink-0" />
                             <span className="truncate">{locality.title}</span>
                           </Link>
                         ))}
@@ -272,23 +272,23 @@ export default function Navbar() {
                   </div>
 
                   {/* Mega Menu Bottom Bar */}
-                  <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-3 bg-slate-50 -mx-6 sm:-mx-8 -mb-6 sm:-mb-8 px-6 sm:px-8 py-3.5 rounded-b-2xl">
-                    <div className="flex items-center space-x-2 text-[#023440] font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#023440] shrink-0" />
+                  <div className="mt-7 pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-slate-700 gap-3 bg-slate-50 -mx-6 sm:-mx-8 -mb-6 sm:-mb-8 px-6 sm:px-8 py-4 rounded-b-2xl">
+                    <div className="flex items-center space-x-2 text-[#023440] font-semibold text-xs sm:text-sm">
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#023440] shrink-0" />
                       <span>Certified Electronic Scales • Immediate Spot Cash & UPI • Free Doorstep Pickup</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <a 
                         href="tel:9599122595" 
-                        className="font-black text-[#023440] hover:underline flex items-center space-x-1"
+                        className="font-black text-sm sm:text-base text-[#023440] hover:underline flex items-center space-x-1.5"
                       >
-                        <Phone className="w-3.5 h-3.5 text-[#023440]" />
+                        <Phone className="w-4 h-4 text-[#023440]" />
                         <span>+91 9599122595</span>
                       </a>
                       <Link 
                         href="/rates"
                         onClick={() => setServicesDropdown(false)}
-                        className="bg-[#023440] text-[#f0edcc] hover:bg-[#054756] font-extrabold px-3.5 py-1.5 rounded-lg transition-colors text-xs shadow-xs"
+                        className="bg-[#023440] text-[#f0edcc] hover:bg-[#054756] font-extrabold px-4 py-2 rounded-xl transition-colors text-xs sm:text-sm shadow-sm"
                       >
                         Check Scrap Rates
                       </Link>
@@ -382,19 +382,19 @@ export default function Navbar() {
             </button>
 
             {mobileServicesOpen && (
-              <div className="pl-3 pr-2 py-2 space-y-3 bg-[#012028] rounded-xl mt-1 text-xs border border-[#054756]">
+              <div className="pl-3.5 pr-2.5 py-3 space-y-4 bg-[#012028] rounded-xl mt-1 text-sm border border-[#054756]">
                 <div>
-                  <p className="font-extrabold text-[#f0edcc] uppercase tracking-wider text-[11px] mb-1.5 flex items-center space-x-1">
-                    <Scale className="w-3.5 h-3.5 text-[#f0edcc]" />
+                  <p className="font-extrabold text-[#f0edcc] uppercase tracking-wider text-xs sm:text-sm mb-2 flex items-center space-x-1.5">
+                    <Scale className="w-4 h-4 text-[#f0edcc]" />
                     <span>Scrap Collection Services</span>
                   </p>
-                  <div className="grid grid-cols-2 gap-1.5 text-slate-200">
+                  <div className="grid grid-cols-2 gap-2 text-slate-200">
                     {serviceCategories.map((s, idx) => (
                       <Link
                         key={`mob-s-${idx}`}
                         href={s.href}
                         onClick={() => setMobileOpen(false)}
-                        className="hover:text-[#f0edcc] py-1 text-[11.5px] truncate"
+                        className="hover:text-[#f0edcc] py-1 text-xs sm:text-sm font-medium truncate"
                       >
                         • {s.title}
                       </Link>
@@ -402,18 +402,18 @@ export default function Navbar() {
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-[#054756]">
-                  <p className="font-extrabold text-[#f0edcc] uppercase tracking-wider text-[11px] mb-1.5 flex items-center space-x-1">
-                    <MapPin className="w-3.5 h-3.5 text-[#f0edcc]" />
+                <div className="pt-3 border-t border-[#054756]">
+                  <p className="font-extrabold text-[#f0edcc] uppercase tracking-wider text-xs sm:text-sm mb-2 flex items-center space-x-1.5">
+                    <MapPin className="w-4 h-4 text-[#f0edcc]" />
                     <span>Noida Scrap Pickup Areas</span>
                   </p>
-                  <div className="grid grid-cols-2 gap-1.5 text-slate-200">
+                  <div className="grid grid-cols-2 gap-2 text-slate-200">
                     {pickupLocalities.map((l, idx) => (
                       <Link
                         key={`mob-l-${idx}`}
                         href={l.href}
                         onClick={() => setMobileOpen(false)}
-                        className="hover:text-[#f0edcc] py-1 text-[11.5px] truncate"
+                        className="hover:text-[#f0edcc] py-1 text-xs sm:text-sm font-medium truncate"
                       >
                         • {l.title}
                       </Link>
