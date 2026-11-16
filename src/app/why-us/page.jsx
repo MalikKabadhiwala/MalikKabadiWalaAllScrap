@@ -121,10 +121,10 @@ export default function WhyUsPage() {
                 </div>
 
                 {/* Traditional dealers */}
-                <div className="md:col-span-4 p-5 bg-red-50/40 flex items-start space-x-3 text-xs sm:text-sm text-slate-600">
+                <div className="md:col-span-4 p-5 bg-red-50/40 flex items-start space-x-3 text-sm sm:text-base text-slate-700">
                   <XCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-red-800 block text-xs uppercase tracking-wider mb-1">
+                    <span className="font-bold text-red-800 block text-xs sm:text-sm uppercase tracking-wider mb-1">
                       Traditional Cart-Pullers
                     </span>
                     <p className="leading-relaxed">{item.traditional}</p>
@@ -132,10 +132,10 @@ export default function WhyUsPage() {
                 </div>
 
                 {/* Malik Kabadi Wala */}
-                <div className="md:col-span-4 p-5 bg-emerald-50/50 flex items-start space-x-3 text-xs sm:text-sm text-[#023440]">
+                <div className="md:col-span-4 p-5 bg-emerald-50/50 flex items-start space-x-3 text-sm sm:text-base text-[#023440]">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-extrabold text-emerald-800 block text-xs uppercase tracking-wider mb-1">
+                    <span className="font-extrabold text-emerald-800 block text-xs sm:text-sm uppercase tracking-wider mb-1">
                       Malik Kabadi Wala All Scrap
                     </span>
                     <p className="leading-relaxed font-semibold">{item.malik}</p>

@@ -143,13 +143,13 @@ export default function WhyChooseUs() {
                         <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center mb-5 shadow-sm group-hover:scale-105 transition-transform">
                           <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
                         </div>
-                        <h3 className="text-xl sm:text-2xl font-bold text-[#023440] font-heading mb-2 leading-snug">
+                        <h3 className="text-xl sm:text-2xl font-extrabold text-[#023440] font-heading mb-2 leading-snug">
                           {item.title}
                         </h3>
-                        <span className="text-xs sm:text-sm font-bold text-[#054756] block mb-3.5">
+                        <span className="text-sm sm:text-base font-bold text-[#054756] block mb-3.5">
                           {item.subtitle}
                         </span>
-                        <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                        <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-normal">
                           {item.desc}
                         </p>
                       </div>
