@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" width="100%" height="100%">
+  <defs>
+    <linearGradient id="navBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#023440" />
+      <stop offset="100%" stop-color="#054756" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Recycling Symbol with Truck in #023440 & #f0edcc -->
+  <g transform="translate(4, 4)">
+    <!-- Recycling circle arrows in #023440 -->
+    <path d="M30 6 C43 6 54 17 54 30 C54 35 52 40 49 44 L54 48 L41 50 L43 37 L47 41 C49 38 50 34 50 30 C50 19 41 10 30 10 L30 14 L20 8 L30 2 Z" fill="#023440" />
+    <path d="M11 16 L6 12 L19 10 L17 23 L13 19 C10 22 9 26 9 30 C9 41 18 50 29 50 L29 46 L39 52 L29 58 L29 54 C16 54 5 43 5 30 C5 25 7 20 11 16 Z" fill="#054756" />
+    
+    <!-- Delivery / Collection Truck Silhouette inside recycling circle -->
+    <g transform="translate(16, 21)" fill="#023440">
+      <!-- Truck Body -->
+      <path d="M2 13 L2 4 C2 2.9 2.9 2 4 2 L18 2 L18 13 Z" />
+      <!-- Truck Cabin -->
+      <path d="M19 5 L23 5 C24.1 5 25.1 5.9 25.6 7 L28 12 L28 13 L19 13 Z" />
+      <!-- Wheels -->
+      <circle cx="7" cy="14" r="2.5" fill="#f0edcc" stroke="#023440" stroke-width="1.2" />
+      <circle cx="23" cy="14" r="2.5" fill="#f0edcc" stroke="#023440" stroke-width="1.2" />
+      <!-- Window -->
+      <path d="M20 7 L24 7 L26 11 L20 11 Z" fill="#f0edcc" />
+    </g>
+  </g>
+
+  <!-- Right: Typography -->
+  <g transform="translate(70, 0)">
+    <!-- Main Bold Brand Text -->
+    <text x="0" y="38" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="34" fill="#023440" letter-spacing="-0.5">
+      MALIK
+    </text>
+    
+    <!-- Subtitle with horizontal brackets in #023440 -->
+    <g transform="translate(0, 48)">
+      <line x1="0" y1="4" x2="16" y2="4" stroke="#023440" stroke-width="2" />
+      <text x="22" y="8" font-family="'Inter', sans-serif" font-weight="800" font-size="10.5" fill="#023440" letter-spacing="1.2">
+        ALL SCRAP BUYER
+      </text>
+      <line x1="148" y1="4" x2="164" y2="4" stroke="#023440" stroke-width="2" />
+    </g>
+  </g>
+</svg>
