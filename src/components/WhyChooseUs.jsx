@@ -138,18 +138,18 @@ export default function WhyChooseUs() {
                     className="shrink-0 px-3.5"
                     style={{ width: `${100 / visibleCount}%` }}
                   >
-                    <div className="bg-[#f0edcc]/25 rounded-3xl p-7 border border-[#f0edcc] hover:border-[#023440] transition-all hover:shadow-xl card-hover h-full flex flex-col justify-between group">
+                    <div className="bg-[#f0edcc]/25 rounded-3xl p-7 sm:p-8 border border-[#f0edcc] hover:border-[#023440] transition-all hover:shadow-xl card-hover h-full flex flex-col justify-between group">
                       <div>
-                        <div className="w-12 h-12 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center mb-5 shadow-sm group-hover:scale-105 transition-transform">
-                          <Icon className="w-6 h-6" />
+                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center mb-5 shadow-sm group-hover:scale-105 transition-transform">
+                          <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
                         </div>
-                        <h3 className="text-lg sm:text-xl font-bold text-[#023440] font-heading mb-1.5 leading-snug">
+                        <h3 className="text-xl sm:text-2xl font-bold text-[#023440] font-heading mb-2 leading-snug">
                           {item.title}
                         </h3>
-                        <span className="text-xs font-bold text-[#054756] block mb-3">
+                        <span className="text-xs sm:text-sm font-bold text-[#054756] block mb-3.5">
                           {item.subtitle}
                         </span>
-                        <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                        <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                           {item.desc}
                         </p>
                       </div>
