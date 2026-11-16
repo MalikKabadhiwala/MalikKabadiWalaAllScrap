@@ -85,13 +85,13 @@ export default function WhyChooseUs() {
         
         {/* Section Heading in #023440 & #f0edcc */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-          <span className="text-[#023440] font-black text-xs uppercase tracking-widest bg-[#f0edcc] py-1.5 px-4 rounded-full inline-block border border-[#023440]/20 mb-3">
+          <span className="text-[#023440] font-black text-xs sm:text-sm uppercase tracking-widest bg-[#f0edcc] py-2 px-5 rounded-full inline-block border border-[#023440]/20 mb-3">
             WHY MALIK KABADI WALA ALL SCRAP
           </span>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#023440] tracking-tight font-heading leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#023440] tracking-tight font-heading leading-tight">
             Honest, Transparent & Digital Scrap Service
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2.5 sm:mt-3 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-700 text-base sm:text-lg mt-3 max-w-2xl mx-auto leading-relaxed">
             Say goodbye to traditional scrap dealers with rusty, manipulated weights. We bring modern ISO-calibrated digital scales and instant cash to your doorstep.
           </p>
         </div>
@@ -138,18 +138,18 @@ export default function WhyChooseUs() {
                     className="shrink-0 px-3.5"
                     style={{ width: `${100 / visibleCount}%` }}
                   >
-                    <div className="bg-[#f0edcc]/25 rounded-3xl p-7 sm:p-8 border border-[#f0edcc] hover:border-[#023440] transition-all hover:shadow-xl card-hover h-full flex flex-col justify-between group">
+                    <div className="bg-[#f0edcc]/25 rounded-3xl p-7 sm:p-9 border-2 border-[#f0edcc] hover:border-[#023440] transition-all hover:shadow-2xl card-hover h-full flex flex-col justify-between group">
                       <div>
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center mb-5 shadow-sm group-hover:scale-105 transition-transform">
-                          <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#023440] text-[#f0edcc] flex items-center justify-center mb-6 shadow-md group-hover:scale-105 transition-transform">
+                          <Icon className="w-7 h-7 sm:w-8 sm:h-8" />
                         </div>
-                        <h3 className="text-xl sm:text-2xl font-extrabold text-[#023440] font-heading mb-2 leading-snug">
+                        <h3 className="text-2xl sm:text-3xl font-extrabold text-[#023440] font-heading mb-2.5 leading-snug">
                           {item.title}
                         </h3>
-                        <span className="text-sm sm:text-base font-bold text-[#054756] block mb-3.5">
+                        <span className="text-sm sm:text-base font-black text-[#054756] block mb-4 uppercase tracking-wider">
                           {item.subtitle}
                         </span>
-                        <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-normal">
+                        <p className="text-base sm:text-lg lg:text-xl text-slate-800 leading-relaxed font-normal">
                           {item.desc}
                         </p>
                       </div>
