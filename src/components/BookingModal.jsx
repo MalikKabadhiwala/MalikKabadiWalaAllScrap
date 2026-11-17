@@ -73,9 +73,7 @@ Please confirm my free doorstep scrap pickup slot!`;
         {/* Header in #023440 & #f0edcc */}
         <div className="bg-[#023440] px-5 py-4 sm:px-7 sm:py-5 text-white flex items-center justify-between border-b border-[#f0edcc]/30 shrink-0">
           <div className="flex items-center space-x-3 sm:space-x-4 min-w-0 pr-2">
-            <div className="bg-white rounded-xl px-2.5 py-1 shadow-sm shrink-0 border border-slate-200 hidden sm:block">
-              <Logo variant="light" size="sm" />
-            </div>
+            <Logo variant="dark" size="sm" className="hidden sm:inline-flex shrink-0" />
             <div className="min-w-0">
               <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-3 py-1 rounded-full text-xs sm:text-sm font-black mb-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#f0edcc] animate-pulse"></span>

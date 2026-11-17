@@ -29,10 +29,10 @@ export default function WelcomeOverview() {
   return (
     <section className="py-20 bg-white border-b border-[#f0edcc]" id="welcome">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Top Split: Text & Main Intro Image */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
-          
+
           {/* Left 7 Cols: Introduction */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center space-x-2 bg-[#f0edcc] border border-[#023440]/20 px-3.5 py-1.5 rounded-full text-xs font-black text-[#023440]">
@@ -89,8 +89,8 @@ export default function WelcomeOverview() {
                 alt="Metal Scrap Collection in Noida"
                 className="w-full h-96 object-cover"
               />
-              <div className="absolute top-4 left-4 bg-white/95 rounded-2xl px-3 py-2 shadow-xl border border-slate-200 backdrop-blur-xs">
-                <Logo variant="light" size="sm" />
+              <div className="absolute top-4 left-4 bg-[#023440]/90 rounded-2xl px-3 py-2 shadow-xl border border-[#f0edcc]/30 backdrop-blur-md">
+                <Logo variant="dark" size="sm" />
               </div>
             </div>
           </div>

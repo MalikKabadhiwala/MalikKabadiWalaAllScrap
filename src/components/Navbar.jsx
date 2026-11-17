@@ -114,11 +114,9 @@ export default function Navbar() {
       <div className="bg-[#023440] border-b border-[#054756] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20 relative">
           
-          {/* Logo Badge Card */}
-          <Link href="/" className="flex items-center group">
-            <div className="bg-white rounded-xl px-2.5 sm:px-3.5 py-1.5 shadow-md inline-flex items-center border border-slate-200 hover:scale-[1.02] transition-transform">
-              <Logo variant="light" size="md" />
-            </div>
+          {/* Logo */}
+          <Link href="/" className="flex items-center group py-1 hover:opacity-95 transition-opacity">
+            <Logo variant="dark" size="md" />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -317,10 +315,8 @@ export default function Navbar() {
         <div className="xl:hidden bg-[#023440] border-t border-[#054756] px-4 py-5 space-y-3 text-white animate-fade-in shadow-2xl max-h-[85vh] overflow-y-auto">
           {/* Mobile Drawer Logo */}
           <div className="pb-3 border-b border-[#054756]">
-            <Link href="/" onClick={() => setMobileOpen(false)} className="inline-block">
-              <div className="bg-white rounded-xl px-2.5 py-1.5 shadow-md inline-flex items-center border border-slate-200">
-                <Logo variant="light" size="sm" />
-              </div>
+            <Link href="/" onClick={() => setMobileOpen(false)} className="inline-block py-1">
+              <Logo variant="dark" size="sm" />
             </Link>
           </div>
 

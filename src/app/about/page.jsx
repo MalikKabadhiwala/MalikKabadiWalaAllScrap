@@ -29,8 +29,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl px-5 py-3.5 inline-flex items-center shadow-md border border-slate-200">
-                <Logo variant="light" size="lg" />
+              <div className="inline-flex items-center">
+                <Logo variant="light" size="md" />
               </div>
               <div>
                 <span className="text-[#023440] font-black text-xs uppercase tracking-widest block bg-[#f0edcc] py-1 px-3 rounded-full inline-block">
