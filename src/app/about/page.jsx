@@ -28,11 +28,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             <div className="space-y-6">
-              <span className="text-[#023440] font-black text-xs uppercase tracking-widest block bg-[#f0edcc] py-1 px-3 rounded-full inline-block">
-                OUR STORY & PROMISE
-              </span>
+              <div className="bg-white rounded-2xl px-4 py-2.5 inline-flex items-center shadow-md border border-slate-200">
+                <img 
+                  src="/images/malik-logo.png" 
+                  alt="Malik Kabadi Wala All Scrap" 
+                  className="h-14 sm:h-16 w-auto object-contain"
+                />
+              </div>
+              <div>
+                <span className="text-[#023440] font-black text-xs uppercase tracking-widest block bg-[#f0edcc] py-1 px-3 rounded-full inline-block">
+                  OUR STORY & PROMISE
+                </span>
+              </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#023440] font-heading leading-tight mt-2">
-                Honest Weights. Transparent Rates. Spot Payment.
+                Honest Weights. Best Price. Spot Payment.
               </h2>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                 For years, selling household scrap meant waiting for unpredictable local cart-pullers who often used manipulated manual balances and offered opaque rates.

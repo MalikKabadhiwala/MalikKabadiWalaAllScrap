@@ -71,17 +71,28 @@ Please confirm my free doorstep scrap pickup slot!`;
       <div className="relative w-full max-w-xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border-2 border-[#023440] overflow-hidden max-h-[92vh] sm:max-h-[90vh] flex flex-col my-auto">
         {/* Header in #023440 & #f0edcc */}
         <div className="bg-[#023440] px-5 py-4 sm:px-7 sm:py-5 text-white flex items-center justify-between border-b border-[#f0edcc]/30 shrink-0">
-          <div className="min-w-0 pr-2">
-            <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-3 py-1 rounded-full text-xs sm:text-sm font-black mb-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#f0edcc] animate-pulse"></span>
-              <span>100% Free Doorstep Collection</span>
+          <div className="flex items-center space-x-3 sm:space-x-4 min-w-0 pr-2">
+            <div className="bg-white rounded-xl p-1.5 shadow-sm shrink-0 border border-slate-200 hidden sm:block">
+              <img 
+                src="/images/malik-logo.png" 
+                alt="Malik Kabadi Wala All Scrap" 
+                className="h-10 w-auto object-contain"
+                style={{ maxHeight: '40px', width: 'auto' }}
+                height={40}
+              />
             </div>
-            <h3 className="text-xl sm:text-2xl font-black font-heading text-white tracking-tight truncate">
-              Schedule Scrap Pickup
-            </h3>
-            <p className="text-[#f0edcc] text-xs sm:text-sm font-medium mt-0.5">
-              Digital scales • Instant Cash or UPI settlement
-            </p>
+            <div className="min-w-0">
+              <div className="inline-flex items-center space-x-1.5 bg-[#012028] text-[#f0edcc] border border-[#f0edcc]/40 px-3 py-1 rounded-full text-xs sm:text-sm font-black mb-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#f0edcc] animate-pulse"></span>
+                <span>100% Free Doorstep Collection</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black font-heading text-white tracking-tight truncate">
+                Schedule Scrap Pickup
+              </h3>
+              <p className="text-[#f0edcc] text-xs sm:text-sm font-medium mt-0.5">
+                Digital scales • Instant Cash or UPI settlement
+              </p>
+            </div>
           </div>
           <button 
             onClick={() => setIsOpen(false)}

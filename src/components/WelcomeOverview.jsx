@@ -67,7 +67,7 @@ export default function WelcomeOverview() {
                 href="/rates"
                 className="inline-flex items-center justify-center bg-[#023440] hover:bg-[#054756] text-[#f0edcc] font-bold px-7 py-4 rounded-xl transition-all shadow-md text-base"
               >
-                <span>View Today's Scrap Rates</span>
+                <span>Sell Scrap Online</span>
               </Link>
 
               <a
@@ -80,7 +80,7 @@ export default function WelcomeOverview() {
             </div>
           </div>
 
-          {/* Right 5 Cols: Visual Card */}
+          {/* Right 5 Cols: Visual Card with Official Logo Badge */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-[#023440]">
               <img
@@ -88,6 +88,13 @@ export default function WelcomeOverview() {
                 alt="Metal Scrap Collection in Noida"
                 className="w-full h-96 object-cover"
               />
+              <div className="absolute top-4 left-4 bg-white/95 rounded-2xl p-2.5 shadow-xl border border-slate-200 backdrop-blur-xs">
+                <img 
+                  src="/images/malik-logo.png" 
+                  alt="Malik Kabadi Wala All Scrap" 
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
             </div>
           </div>
 

@@ -144,14 +144,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-12">
           {/* Col 1: About */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-11 h-11 rounded-xl bg-[#f0edcc] flex items-center justify-center text-[#023440] font-black shadow-md">
-                <Scale className="w-6 h-6" />
+            <Link href="/" className="inline-block group">
+              <div className="bg-white rounded-2xl px-4 py-2 inline-flex items-center shadow-lg border border-slate-200 hover:scale-[1.02] transition-transform">
+                <img 
+                  src="/images/malik-logo.png" 
+                  alt="Malik Kabadi Wala All Scrap" 
+                  className="h-12 sm:h-14 w-auto object-contain"
+                  style={{ maxHeight: '56px', width: 'auto' }}
+                  height={56}
+                />
               </div>
-              <span className="font-extrabold text-2xl text-white tracking-tight">
-                MALIK <span className="text-[#f0edcc]">KABADI WALA</span>
-              </span>
-            </div>
+            </Link>
             <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
               <strong>Malik Kabadi Wala All Scrap</strong> is Noida’s trusted doorstep scrap collection and recycling service based in Bishanpura, Sector 58. We provide accurate electronic digital weighing and instant spot cash payouts.
             </p>

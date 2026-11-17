@@ -115,13 +115,13 @@ export default function Navbar() {
           
           {/* Logo Badge Card */}
           <Link href="/" className="flex items-center group">
-            <div className="bg-[#f0edcc] rounded-lg px-2.5 sm:px-3 py-1 sm:py-1.5 shadow-md inline-flex items-center space-x-2 border border-[#dfdbb0] hover:scale-[1.02] transition-transform">
+            <div className="bg-white rounded-xl px-2.5 sm:px-3.5 py-1 sm:py-1.5 shadow-md inline-flex items-center border border-slate-200 hover:scale-[1.02] transition-transform">
               <img 
-                src="/images/malik-navbar-logo.svg" 
+                src="/images/malik-logo.png" 
                 alt="Malik Kabadi Wala All Scrap" 
-                className="h-8 sm:h-10 w-auto object-contain"
-                style={{ maxHeight: '40px', width: 'auto' }}
-                height={40}
+                className="h-10 sm:h-12 w-auto object-contain"
+                style={{ maxHeight: '48px', width: 'auto' }}
+                height={48}
               />
             </div>
           </Link>
@@ -320,6 +320,21 @@ export default function Navbar() {
       {/* Mobile Drawer Menu */}
       {mobileOpen && (
         <div className="xl:hidden bg-[#023440] border-t border-[#054756] px-4 py-5 space-y-3 text-white animate-fade-in shadow-2xl max-h-[85vh] overflow-y-auto">
+          {/* Mobile Drawer Logo */}
+          <div className="pb-3 border-b border-[#054756]">
+            <Link href="/" onClick={() => setMobileOpen(false)} className="inline-block">
+              <div className="bg-white rounded-xl px-3 py-1.5 shadow-md inline-flex items-center border border-slate-200">
+                <img 
+                  src="/images/malik-logo.png" 
+                  alt="Malik Kabadi Wala All Scrap" 
+                  className="h-9 w-auto object-contain"
+                  style={{ maxHeight: '36px', width: 'auto' }}
+                  height={36}
+                />
+              </div>
+            </Link>
+          </div>
+
           <Link
             href="/"
             onClick={() => setMobileOpen(false)}

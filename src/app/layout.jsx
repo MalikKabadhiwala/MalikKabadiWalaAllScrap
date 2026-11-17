@@ -28,11 +28,20 @@ export const metadata = {
     description: '100% Digital Weighing Scales & Instant Cash Payment. Bishanpura, Sector 58, Noida. Call 9599122595.',
     url: 'https://malikkabadiwala.com',
     siteName: 'Malik Kabadi Wala All Scrap',
+    images: [
+      {
+        url: 'https://malikkabadiwala.com/images/malik-logo.png',
+        width: 1024,
+        height: 655,
+        alt: 'Malik Kabadi Wala All Scrap Logo',
+      },
+    ],
     locale: 'en_IN',
     type: 'website',
   },
   icons: {
-    icon: '/images/favicon.svg',
+    icon: '/images/malik-logo.png',
+    apple: '/images/malik-logo.png',
   },
 };
 
@@ -42,7 +51,7 @@ export default function RootLayout({ children }) {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Malik Kabadi Wala All Scrap',
-    image: 'https://malikkabadiwala.com/images/logo.svg',
+    image: 'https://malikkabadiwala.com/images/malik-logo.png',
     telephone: '+919599122595',
     email: 'am513077@gmail.com',
     address: {
