@@ -6,12 +6,7 @@ import { LayoutGrid, MessageCircle, Phone, IndianRupee, Zap } from 'lucide-react
 export default function Hero() {
   const openRatesOrModal = () => {
     if (typeof window !== 'undefined') {
-      const calcElem = document.getElementById('rate-calculator-section');
-      if (calcElem) {
-        calcElem.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        window.dispatchEvent(new CustomEvent('open-booking-modal'));
-      }
+      window.dispatchEvent(new CustomEvent('open-booking-modal'));
     }
   };
 

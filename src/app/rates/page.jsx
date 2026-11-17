@@ -1,5 +1,4 @@
 import RatesTable from '@/components/RatesTable';
-import RateCalculator from '@/components/RateCalculator';
 import LiveRatesTicker from '@/components/LiveRatesTicker';
 import PageHeader from '@/components/PageHeader';
 import { Scale, CheckCircle2, Phone, MessageCircle } from 'lucide-react';
@@ -41,23 +40,6 @@ export default function RatesPage() {
 
       {/* Main Full Rates Table */}
       <RatesTable isFullPage={true} />
-
-      {/* Calculator Section */}
-      <section className="py-16 bg-white border-t border-[#f0edcc]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#023440] font-heading">
-                Calculate Your Total Scrap Value
-              </h2>
-              <p className="text-slate-500 text-xs sm:text-sm mt-1">
-                Select any item from our catalog, enter quantity, and get an instant payout estimate.
-              </p>
-            </div>
-            <RateCalculator />
-          </div>
-        </div>
-      </section>
 
       {/* Bulk Pricing Notice in #023440 & #f0edcc */}
       <section className="py-12 bg-[#023440] text-white border-t-2 border-[#f0edcc]">
