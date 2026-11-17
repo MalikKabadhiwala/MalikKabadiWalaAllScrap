@@ -142,11 +142,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Main Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-10 py-12">
           {/* Col 1: About */}
-          <div className="space-y-4">
+          <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="inline-block group py-1 hover:opacity-95 transition-opacity">
-              <Logo variant="dark" size="md" />
+              <Logo variant="dark" size="sm" />
             </Link>
             <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
               <strong>Malik Kabadi Wala All Scrap</strong> is Noida’s trusted doorstep scrap collection and recycling service based in Bishanpura, Sector 58. We provide accurate electronic digital weighing and instant spot cash payouts.
@@ -158,7 +158,7 @@ export default function Footer() {
           </div>
 
           {/* Col 2: Scrap Items We Buy */}
-          <div className="space-y-4">
+          <div className="lg:col-span-3 space-y-4">
             <h4 className="text-base sm:text-lg font-black text-[#f0edcc] uppercase tracking-wider font-heading">
               Scrap Items We Buy
             </h4>
@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
 
           {/* Col 3: Service Localities */}
-          <div className="space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <h4 className="text-base sm:text-lg font-black text-[#f0edcc] uppercase tracking-wider font-heading">
               Noida Service Areas
             </h4>
@@ -191,7 +191,7 @@ export default function Footer() {
           </div>
 
           {/* Col 4: Contact Info */}
-          <div className="space-y-4">
+          <div className="lg:col-span-3 space-y-4">
             <h4 className="text-base sm:text-lg font-black text-[#f0edcc] uppercase tracking-wider font-heading">
               Contact Details
             </h4>
