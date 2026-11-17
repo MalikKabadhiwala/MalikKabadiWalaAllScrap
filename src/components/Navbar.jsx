@@ -15,6 +15,7 @@ import {
   CheckCircle2,
   Sparkles
 } from 'lucide-react';
+import Logo from '@/components/Logo';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -115,14 +116,8 @@ export default function Navbar() {
           
           {/* Logo Badge Card */}
           <Link href="/" className="flex items-center group">
-            <div className="bg-white rounded-xl px-2.5 sm:px-3.5 py-1 sm:py-1.5 shadow-md inline-flex items-center border border-slate-200 hover:scale-[1.02] transition-transform">
-              <img 
-                src="/images/malik-logo.png" 
-                alt="Malik Kabadi Wala All Scrap" 
-                className="h-10 sm:h-12 w-auto object-contain"
-                style={{ maxHeight: '48px', width: 'auto' }}
-                height={48}
-              />
+            <div className="bg-white rounded-xl px-2.5 sm:px-3.5 py-1.5 shadow-md inline-flex items-center border border-slate-200 hover:scale-[1.02] transition-transform">
+              <Logo variant="light" size="md" />
             </div>
           </Link>
 
@@ -323,14 +318,8 @@ export default function Navbar() {
           {/* Mobile Drawer Logo */}
           <div className="pb-3 border-b border-[#054756]">
             <Link href="/" onClick={() => setMobileOpen(false)} className="inline-block">
-              <div className="bg-white rounded-xl px-3 py-1.5 shadow-md inline-flex items-center border border-slate-200">
-                <img 
-                  src="/images/malik-logo.png" 
-                  alt="Malik Kabadi Wala All Scrap" 
-                  className="h-9 w-auto object-contain"
-                  style={{ maxHeight: '36px', width: 'auto' }}
-                  height={36}
-                />
+              <div className="bg-white rounded-xl px-2.5 py-1.5 shadow-md inline-flex items-center border border-slate-200">
+                <Logo variant="light" size="sm" />
               </div>
             </Link>
           </div>

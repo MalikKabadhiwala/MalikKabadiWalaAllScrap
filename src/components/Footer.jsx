@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Phone, Mail, MapPin, Clock, Scale, ShieldCheck, HeartHandshake, CheckCircle2, MessageCircle, AlertCircle, Truck, Sparkles } from 'lucide-react';
+import Logo from '@/components/Logo';
 
 const movingHighlights = [
   {
@@ -145,14 +146,8 @@ export default function Footer() {
           {/* Col 1: About */}
           <div className="space-y-4">
             <Link href="/" className="inline-block group">
-              <div className="bg-white rounded-2xl px-4 py-2 inline-flex items-center shadow-lg border border-slate-200 hover:scale-[1.02] transition-transform">
-                <img 
-                  src="/images/malik-logo.png" 
-                  alt="Malik Kabadi Wala All Scrap" 
-                  className="h-12 sm:h-14 w-auto object-contain"
-                  style={{ maxHeight: '56px', width: 'auto' }}
-                  height={56}
-                />
+              <div className="bg-white rounded-2xl px-4 py-2.5 inline-flex items-center shadow-lg border border-slate-200 hover:scale-[1.02] transition-transform">
+                <Logo variant="light" size="lg" />
               </div>
             </Link>
             <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal">

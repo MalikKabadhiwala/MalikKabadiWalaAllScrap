@@ -1,5 +1,6 @@
 import WhyChooseUs from '@/components/WhyChooseUs';
 import PageHeader from '@/components/PageHeader';
+import Logo from '@/components/Logo';
 import { Scale, Recycle, MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export const metadata = {
@@ -28,12 +29,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl px-4 py-2.5 inline-flex items-center shadow-md border border-slate-200">
-                <img 
-                  src="/images/malik-logo.png" 
-                  alt="Malik Kabadi Wala All Scrap" 
-                  className="h-14 sm:h-16 w-auto object-contain"
-                />
+              <div className="bg-white rounded-2xl px-5 py-3.5 inline-flex items-center shadow-md border border-slate-200">
+                <Logo variant="light" size="lg" />
               </div>
               <div>
                 <span className="text-[#023440] font-black text-xs uppercase tracking-widest block bg-[#f0edcc] py-1 px-3 rounded-full inline-block">

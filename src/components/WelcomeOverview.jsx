@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Scale, Wallet, Truck, Clock, CheckCircle2, Phone } from 'lucide-react';
+import Logo from '@/components/Logo';
 
 export default function WelcomeOverview() {
   const highlights = [
@@ -88,12 +89,8 @@ export default function WelcomeOverview() {
                 alt="Metal Scrap Collection in Noida"
                 className="w-full h-96 object-cover"
               />
-              <div className="absolute top-4 left-4 bg-white/95 rounded-2xl p-2.5 shadow-xl border border-slate-200 backdrop-blur-xs">
-                <img 
-                  src="/images/malik-logo.png" 
-                  alt="Malik Kabadi Wala All Scrap" 
-                  className="h-12 w-auto object-contain"
-                />
+              <div className="absolute top-4 left-4 bg-white/95 rounded-2xl px-3 py-2 shadow-xl border border-slate-200 backdrop-blur-xs">
+                <Logo variant="light" size="sm" />
               </div>
             </div>
           </div>
