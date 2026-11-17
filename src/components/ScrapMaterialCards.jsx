@@ -7,8 +7,8 @@ const scrapMaterials = [
     id: 'copper',
     tag: 'HIGH VALUE METAL',
     name: 'Copper Scrap & Wires',
-    rate: '₹ 490',
-    unit: '/ kg',
+    rate: 'Best Price',
+    unit: '',
     desc: 'Heavy armature copper wire, motor winding, clean industrial pipes, utensils, and electrical cables.',
     image: '/images/scrap/copper-scrap.jpg',
     features: ['100% digital scale weighing', 'Highest wholesale market rate', 'Instant cash or digital UPI payout']
@@ -17,8 +17,8 @@ const scrapMaterials = [
     id: 'brass',
     tag: 'HIGH VALUE METAL',
     name: 'Brass Scrap & Utensils',
-    rate: '₹ 350',
-    unit: '/ kg',
+    rate: 'Best Price',
+    unit: '',
     desc: 'Household brass utensils, water valves, sanitary fittings, machinery parts, and decorative brass hardware.',
     image: '/images/scrap/brass-scrap.jpg',
     features: ['Fair weight guarantee', 'Zero deduction for tare weight', 'Free doorstep collection in 60 mins']
@@ -27,8 +27,8 @@ const scrapMaterials = [
     id: 'aluminium',
     tag: 'NON-FERROUS METAL',
     name: 'Aluminium Scrap & Channels',
-    rate: '₹ 135',
-    unit: '/ kg',
+    rate: 'Best Price',
+    unit: '',
     desc: 'Aluminium sheets, sliding door channels, partition frames, household utensils, and ladder sections.',
     image: '/images/scrap/aluminium-scrap.jpg',
     features: ['Commercial & household scrap', 'Clean weight on electronic balance', 'Spot payment on the spot']
@@ -37,8 +37,8 @@ const scrapMaterials = [
     id: 'iron',
     tag: 'FERROUS SCRAP',
     name: 'Iron & Steel Scrap',
-    rate: '₹ 35',
-    unit: '/ kg',
+    rate: 'Best Price',
+    unit: '',
     desc: 'Heavy structural iron, construction TMT rods, angles, pipes, window grills, gates, and machinery scrap.',
     image: '/images/scrap/iron-scrap.jpg',
     features: ['High-tonnage vehicle loading', 'Free lifting by our staff', 'Weighbridge slip available for bulk']
@@ -47,8 +47,8 @@ const scrapMaterials = [
     id: 'battery',
     tag: 'BATTERY RECYCLING',
     name: 'Inverter & Vehicle Batteries',
-    rate: '₹ 75',
-    unit: '/ kg (or ₹1,800/pc)',
+    rate: 'Best Price',
+    unit: '',
     desc: 'Old lead-acid inverter batteries, motorcycle batteries, car & truck batteries, and commercial UPS power banks.',
     image: '/images/scrap/battery-scrap.jpg',
     features: ['Safe eco-friendly disposal', 'Immediate top cash valuation', 'Free doorstep pickup for single unit']
@@ -57,8 +57,8 @@ const scrapMaterials = [
     id: 'cardboard',
     tag: 'PAPER RECYCLING',
     name: 'Cardboard & Packaging Boxes',
-    rate: '₹ 11',
-    unit: '/ kg',
+    rate: 'Best Price',
+    unit: '',
     desc: 'Corrugated cartons, e-commerce delivery boxes, grocery cartons, packing sheets, and shipping boxes.',
     image: '/images/scrap/cardboard-scrap.jpg',
     features: ['Bundled digital weighing', 'Zero pickup charge', 'Regular commercial office pickup']
@@ -114,13 +114,15 @@ export default function ScrapMaterialCards() {
                   </h3>
 
                   {/* Price Rate */}
-                  <div className="flex flex-wrap items-baseline gap-x-1 mb-1.5 sm:mb-2">
+                  <div className="flex flex-wrap items-baseline gap-x-1.5 mb-1.5 sm:mb-2">
                     <span className="text-lg sm:text-2xl lg:text-3xl font-black text-emerald-600">
                       {item.rate}
                     </span>
-                    <span className="text-[10px] sm:text-xs font-bold text-slate-500">
-                      {item.unit}
-                    </span>
+                    {item.unit && (
+                      <span className="text-[10px] sm:text-xs font-bold text-slate-500">
+                        {item.unit}
+                      </span>
+                    )}
                   </div>
 
                   {/* Description */}
