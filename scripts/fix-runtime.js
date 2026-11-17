@@ -47,3 +47,39 @@ if (fs.existsSync(runtimePath)) {
   fs.writeFileSync(runtimePath, code, 'utf8');
   console.log('Patched __webpack_require__.u dynamically in webpack-runtime.js');
 }
+
+// 3. Mirror all chunks from .next/server/chunks into .next/server root
+const chunksDir = '.next/server/chunks';
+const serverDir = '.next/server';
+if (fs.existsSync(chunksDir)) {
+  const chunkFiles = fs.readdirSync(chunksDir);
+  let copied = 0;
+  for (const file of chunkFiles) {
+    if (file.endsWith('.js')) {
+      const src = path.join(chunksDir, file);
+      const dest = path.join(serverDir, file);
+      if (!fs.existsSync(dest) || fs.statSync(src).mtimeMs > fs.statSync(dest).mtimeMs) {
+        fs.copyFileSync(src, dest);
+        copied++;
+      }
+    }
+  }
+  if (copied > 0) {
+    console.log(`Mirrored ${copied} chunks from .next/server/chunks to .next/server root`);
+  }
+}
+
+// 4. Mirror vendor chunks if present
+const vendorChunksDir = '.next/server/vendor-chunks';
+if (fs.existsSync(vendorChunksDir)) {
+  const vendorFiles = fs.readdirSync(vendorChunksDir);
+  for (const file of vendorFiles) {
+    if (file.endsWith('.js')) {
+      const src = path.join(vendorChunksDir, file);
+      const dest = path.join(serverDir, file);
+      if (!fs.existsSync(dest) || fs.statSync(src).mtimeMs > fs.statSync(dest).mtimeMs) {
+        fs.copyFileSync(src, dest);
+      }
+    }
+  }
+}
