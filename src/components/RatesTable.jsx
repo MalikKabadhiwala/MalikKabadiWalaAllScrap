@@ -104,7 +104,7 @@ export default function RatesTable({ isFullPage = false }) {
   };
 
   const handleSellItem = (item) => {
-    const message = `Hello Malik Kabadi Wala, I want to sell ${item.name} at your website rate ₹${item.rate}/${item.unit}. Please schedule a free doorstep pickup in Noida.`;
+    const message = `Hello Malik Kabadi Wala, I want to sell ${item.name} at the best market rate. Please schedule a free doorstep pickup in Noida.`;
     const waUrl = `https://wa.me/919599122595?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank');
   };
@@ -216,21 +216,16 @@ export default function RatesTable({ isFullPage = false }) {
                   >
                     <div className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-xs hover:border-[#023440] hover:shadow-xl transition-all flex flex-col justify-between h-full group">
                       <div>
-                        {/* Top row: Zap icon + Price badge */}
+                        {/* Top row: Zap icon + optional badge */}
                         <div className="flex items-start justify-between mb-3.5">
                           <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#023440] text-[#f0edcc] flex items-center justify-center font-bold text-base shadow-xs shrink-0">
                             <Zap className="w-5 h-5 text-[#f0edcc] fill-[#f0edcc]" />
                           </div>
-                          <div className="text-right">
-                            <span className="inline-block px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs sm:text-sm font-black bg-[#023440] text-[#f0edcc] shadow-xs">
-                              ₹{item.rate} / {item.unit}
+                          {item.badge ? (
+                            <span className="inline-block px-2.5 py-1 rounded-md text-[10px] sm:text-xs font-black uppercase tracking-wider text-[#023440] bg-[#f0edcc] border border-[#023440]/20 shadow-xs">
+                              {item.badge}
                             </span>
-                            {item.badge && (
-                              <span className="block text-[10px] sm:text-xs font-bold text-[#023440] mt-1 uppercase tracking-wide">
-                                {item.badge}
-                              </span>
-                            )}
-                          </div>
+                          ) : null}
                         </div>
 
                         {/* Item Name */}
