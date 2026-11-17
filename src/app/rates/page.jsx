@@ -5,8 +5,8 @@ import PageHeader from '@/components/PageHeader';
 import { Scale, CheckCircle2, Phone, MessageCircle } from 'lucide-react';
 
 export const metadata = {
-  title: 'Today Scrap Rates in Noida | Malik Kabadi Wala All Scrap Price List',
-  description: 'Check daily live scrap rates in Noida for iron, copper, brass, aluminium, paper, cardboard, batteries, and e-waste. Certified digital weighing scale.',
+  title: 'Scrap Materials We Buy in Noida | Malik Kabadi Wala All Scrap',
+  description: 'Doorstep scrap pickup in Noida for iron, copper, brass, aluminium, paper, cardboard, batteries, and e-waste. Certified digital weighing scale.',
 };
 
 export default function RatesPage() {
@@ -17,10 +17,10 @@ export default function RatesPage() {
         badge={
           <>
             <Scale className="w-4 h-4 text-[#f0edcc]" />
-            <span>Updated Daily Based on Wholesale Metal & Paper Indices</span>
+            <span>Honest Weighing • Transparent Valuation • Spot Payout</span>
           </>
         }
-        title="Live Scrap Rates in Noida"
+        title="Scrap Materials We Buy in Noida"
         subtitle="Honest, competitive prices for all household, commercial, and industrial scrap materials. We bring certified digital weighing scales directly to your doorstep."
       >
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-[#f0edcc]">
@@ -66,7 +66,7 @@ export default function RatesPage() {
           <div>
             <h3 className="text-xl font-bold font-heading text-[#f0edcc]">Have Scrap Above 300 KG or Factory Lot?</h3>
             <p className="text-xs text-slate-200 mt-1">
-              We offer exclusive wholesale premium rates for bulk industrial scrap, office dismantling, and society cleanout drives.
+              We offer exclusive wholesale premium payouts for bulk industrial scrap, office dismantling, and society cleanout drives.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto shrink-0">

@@ -19,7 +19,7 @@ const movingHighlights = [
   },
   {
     icon: Sparkles,
-    title: 'Highest Market Scrap Rates',
+    title: 'Best Market Scrap Price',
     badge: 'Noida Sector 58 Hub',
   },
   {

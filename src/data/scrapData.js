@@ -23,7 +23,7 @@ export const scrapRatesData = [
     icon: 'Zap', 
     min: '2 kg', 
     desc: 'Heavy armature copper wire, motor winding, clean pipes, utensils, industrial copper.',
-    badge: 'Highest Price'
+    badge: 'High Value'
   },
   { 
     id: 'brass', 
@@ -34,7 +34,7 @@ export const scrapRatesData = [
     icon: 'Award', 
     min: '2 kg', 
     desc: 'Brass utensils, sanitary fittings, valves, decorative items, hardware brass.',
-    badge: 'Best Rate'
+    badge: 'Top Value'
   },
   { 
     id: 'aluminium', 
@@ -310,12 +310,12 @@ export const whyChooseUsList = [
   {
     title: 'Zero Doorstep Pickup Charges',
     subtitle: '100% Free Doorstep Collection',
-    desc: 'We never charge for visits, inspection, weighing, or vehicle loading. The rate you see is the exact rate you receive.',
+    desc: 'We never charge for visits, inspection, weighing, or vehicle loading. 100% free doorstep collection with zero hidden deductions.',
     icon: 'Truck'
   },
   {
-    title: 'Best Market Rates Guaranteed',
-    subtitle: 'Daily Wholesale Market Benchmark',
+    title: 'Best Market Price Guaranteed',
+    subtitle: 'Top Payout for All Scrap',
     desc: 'We monitor wholesale recycling markets daily to offer the most competitive scrap payout across Noida, Greater Noida, and Ghaziabad.',
     icon: 'TrendingUp'
   },

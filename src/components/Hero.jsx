@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="inline-flex items-center space-x-2 bg-[#023440]/85 border border-[#f0edcc]/60 px-3 sm:px-4 py-1.5 rounded-full text-[10.5px] sm:text-xs font-bold text-[#f0edcc] backdrop-blur-md shadow-lg max-w-full">
             <Zap className="w-3.5 h-3.5 text-[#f0edcc] fill-[#f0edcc] shrink-0" />
             <span className="tracking-wide sm:tracking-widest uppercase">
-              TOP MARKET RATES • 100% DIGITAL WEIGHING • NOIDA SECTOR 58
+              DOORSTEP PICKUP • 100% DIGITAL WEIGHING • NOIDA SECTOR 58
             </span>
           </div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] font-heading drop-shadow-[0_3px_12px_rgba(2,52,64,0.95)]">
             Sell Your Scrap —<br />
             <span className="text-[#f0edcc] drop-shadow-[0_3px_12px_rgba(2,52,64,0.95)]">
-              Best Rates, Instant Cash.
+              Best Price, Instant Cash.
             </span>
           </h1>
 
@@ -62,13 +62,13 @@ export default function Hero() {
 
           {/* Dual Action Buttons matching #023440 & #f0edcc */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 pt-4">
-            {/* Button 1: Explore Rates (Deep #023440 Background with #f0edcc Border & White Text) */}
+            {/* Button 1: Sell Scrap (Deep #023440 Background with #f0edcc Border & White Text) */}
             <Link
               href="/rates"
               className="inline-flex items-center justify-center space-x-2.5 bg-[#023440] hover:bg-[#012028] text-white font-black px-7 py-3.5 rounded-xl shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-base border-2 border-[#f0edcc] w-full sm:w-auto text-center"
             >
               <LayoutGrid className="w-5 h-5 text-[#f0edcc]" />
-              <span>Explore Rates</span>
+              <span>Sell Scrap</span>
             </Link>
 
             {/* Button 2: WhatsApp Now (Cream #f0edcc Background with #023440 Text) */}

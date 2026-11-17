@@ -104,7 +104,7 @@ export default function RatesTable({ isFullPage = false }) {
   };
 
   const handleSellItem = (item) => {
-    const message = `Hello Malik Kabadi Wala, I want to sell ${item.name} at the best market rate. Please schedule a free doorstep pickup in Noida.`;
+    const message = `Hello Malik Kabadi Wala, I want to sell ${item.name} at the best price. Please schedule a free doorstep pickup in Noida.`;
     const waUrl = `https://wa.me/919599122595?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank');
   };
@@ -117,10 +117,10 @@ export default function RatesTable({ isFullPage = false }) {
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#f0edcc] text-[#023440] text-xs font-black mb-3 border border-[#023440]/20">
             <Flame className="w-4 h-4 text-[#023440]" />
-            <span>Best Market Rates & Doorstep Collection</span>
+            <span>Doorstep Scrap Collection & Digital Weighing</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#023440] tracking-tight font-heading">
-            Scrap Materials We Buy at Best Market Rates
+            Scrap Materials We Buy in Noida
           </h2>
           <p className="text-slate-600 text-xs sm:text-base mt-2">
             Select any scrap item below to schedule an express doorstep pickup across Noida with certified digital weighing and instant payout.
@@ -294,7 +294,7 @@ export default function RatesTable({ isFullPage = false }) {
             <Lightbulb className="w-5 h-5 text-[#f0edcc]" />
           </div>
           <p className="font-medium text-[#023440] text-sm sm:text-base leading-relaxed m-0">
-            <strong className="font-extrabold font-heading text-base sm:text-lg mr-1 text-[#023440]">Rate Guarantee:</strong>Prices vary slightly based on international metal index and wholesale market fluctuations. For large corporate volumes or heavy scrap lots above 500 kg, please call <strong className="font-extrabold text-[#023440] underline decoration-[#023440]/40">+91 9599122595</strong> for special bulk wholesale rates!
+            <strong className="font-extrabold font-heading text-base sm:text-lg mr-1 text-[#023440]">Best Price Guarantee:</strong>Prices vary slightly based on international metal index and wholesale market fluctuations. For large corporate volumes or heavy scrap lots above 500 kg, please call <strong className="font-extrabold text-[#023440] underline decoration-[#023440]/40">+91 9599122595</strong> for special bulk wholesale rates!
           </p>
         </div>
 

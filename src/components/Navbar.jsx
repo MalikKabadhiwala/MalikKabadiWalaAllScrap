@@ -290,7 +290,7 @@ export default function Navbar() {
                         onClick={() => setServicesDropdown(false)}
                         className="bg-[#023440] text-[#f0edcc] hover:bg-[#054756] font-extrabold px-4 py-2 rounded-xl transition-colors text-xs sm:text-sm shadow-sm"
                       >
-                        Check Scrap Rates
+                        View Scrap Items
                       </Link>
                     </div>
                   </div>
@@ -323,12 +323,12 @@ export default function Navbar() {
 
           {/* Right Action Buttons in #f0edcc with #023440 text */}
           <div className="hidden lg:flex items-center space-x-3">
-            {/* Scrap Rates Button */}
+            {/* Sell Scrap Button */}
             <Link
               href="/rates"
               className="bg-[#f0edcc] text-[#023440] hover:bg-white font-extrabold px-4 py-2 rounded-md transition-all shadow-md text-sm"
             >
-              Scrap Rates
+              Sell Scrap
             </Link>
 
             {/* Call Now Button */}
@@ -453,7 +453,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="text-center py-2.5 px-3 rounded-md bg-[#f0edcc] text-[#023440] font-extrabold text-xs shadow-md"
             >
-              Scrap Rates
+              Sell Scrap
             </Link>
             <a
               href="tel:9599122595"

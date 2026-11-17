@@ -3,18 +3,18 @@
 import { Flame } from 'lucide-react';
 
 const tickerItems = [
-  { item: 'Iron Scrap', rate: '₹35/kg' },
-  { item: 'Copper Scrap', rate: '₹490/kg' },
-  { item: 'Brass Scrap', rate: '₹350/kg' },
-  { item: 'Aluminium Scrap', rate: '₹135/kg' },
-  { item: 'Newspaper Scrap', rate: '₹16/kg' },
-  { item: 'Cardboard Boxes', rate: '₹11/kg' },
-  { item: 'Battery Scrap', rate: '₹88/kg' },
-  { item: 'Scrap AC Unit (Metal)', rate: '₹3,600/pc' },
-  { item: 'Stainless Steel Scrap', rate: '₹48/kg' },
-  { item: 'Old Laptop Scrap', rate: '₹550/pc' },
-  { item: 'Washing Machine Scrap', rate: '₹850/pc' },
-  { item: 'Scrap Metal Cooler', rate: '₹550/pc' },
+  { item: 'Iron Scrap', rate: 'Best Price' },
+  { item: 'Copper Scrap', rate: 'Best Price' },
+  { item: 'Brass Scrap', rate: 'Best Price' },
+  { item: 'Aluminium Scrap', rate: 'Best Price' },
+  { item: 'Newspaper Scrap', rate: 'Best Price' },
+  { item: 'Cardboard Boxes', rate: 'Best Price' },
+  { item: 'Battery Scrap', rate: 'Best Price' },
+  { item: 'Scrap AC Unit (Metal)', rate: 'Best Price' },
+  { item: 'Stainless Steel Scrap', rate: 'Best Price' },
+  { item: 'Old Laptop Scrap', rate: 'Best Price' },
+  { item: 'Washing Machine Scrap', rate: 'Best Price' },
+  { item: 'Scrap Metal Cooler', rate: 'Best Price' },
 ];
 
 export default function LiveRatesTicker() {
@@ -26,7 +26,7 @@ export default function LiveRatesTicker() {
       <div className="ticker-content flex items-center space-x-8 text-xs font-medium">
         <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[#012028] text-[#f0edcc] font-extrabold border border-[#f0edcc]/40 shadow-xs">
           <Flame className="w-3.5 h-3.5 text-[#f0edcc]" />
-          <span>TODAY'S LIVE SCRAP MARKET RATES (NOIDA):</span>
+          <span>DAILY DOORSTEP SCRAP COLLECTION (NOIDA):</span>
         </div>
 
         {/* First repetition */}
@@ -42,7 +42,7 @@ export default function LiveRatesTicker() {
         {/* Second repetition for smooth infinite marquee */}
         <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[#012028] text-[#f0edcc] font-extrabold border border-[#f0edcc]/40 shadow-xs">
           <Flame className="w-3.5 h-3.5 text-[#f0edcc]" />
-          <span>TODAY'S LIVE SCRAP MARKET RATES (NOIDA):</span>
+          <span>DAILY DOORSTEP SCRAP COLLECTION (NOIDA):</span>
         </div>
 
         {tickerItems.map((item, idx) => (
