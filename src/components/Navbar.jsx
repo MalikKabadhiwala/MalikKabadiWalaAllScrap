@@ -10,9 +10,6 @@ import {
   ChevronDown, 
   Menu, 
   X, 
-  Facebook, 
-  Instagram, 
-  Youtube,
   Scale,
   Recycle,
   CheckCircle2,
@@ -103,43 +100,10 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Top Right: Location & Social Media Icons */}
-          <div className="flex items-center space-x-3 sm:space-x-5 text-[11.5px] sm:text-xs">
-            <div className="hidden md:flex items-center space-x-1.5 text-[#f0edcc]/90">
-              <MapPin className="w-3.5 h-3.5 text-[#f0edcc] shrink-0" />
-              <span>Bishanpura, Noida Sector 58, U.P.</span>
-            </div>
-
-            {/* Social Icons */}
-            <div className="flex items-center space-x-2.5 text-[#f0edcc]">
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-3.5 h-3.5 fill-current" />
-              </a>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-3.5 h-3.5" />
-              </a>
-              <a 
-                href="https://youtube.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:text-white transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-3.5 h-3.5 fill-current" />
-              </a>
-            </div>
+          {/* Top Right: Location Address */}
+          <div className="flex items-center space-x-1.5 text-[11.5px] sm:text-xs text-[#f0edcc]/90">
+            <MapPin className="w-3.5 h-3.5 text-[#f0edcc] shrink-0" />
+            <span>Bishanpura, Noida Sector 58, U.P.</span>
           </div>
 
         </div>
