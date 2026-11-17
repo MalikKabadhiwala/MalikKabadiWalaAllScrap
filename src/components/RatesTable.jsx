@@ -117,13 +117,13 @@ export default function RatesTable({ isFullPage = false }) {
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#f0edcc] text-[#023440] text-xs font-black mb-3 border border-[#023440]/20">
             <Flame className="w-4 h-4 text-[#023440]" />
-            <span>Daily Wholesale Market Benchmark Rates</span>
+            <span>Best Market Rates & Doorstep Collection</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#023440] tracking-tight font-heading">
-            Today's Scrap Price List in Noida
+            Scrap Materials We Buy at Best Market Rates
           </h2>
           <p className="text-slate-600 text-xs sm:text-base mt-2">
-            Transparent scrap buying prices updated daily based on wholesale recycling markets. 100% digital weighing with zero hidden deductions.
+            Select any scrap item below to schedule an express doorstep pickup across Noida with certified digital weighing and instant payout.
           </p>
         </div>
 
@@ -283,7 +283,7 @@ export default function RatesTable({ isFullPage = false }) {
               href="/rates"
               className="inline-flex items-center justify-center px-6 py-3.5 sm:py-4 rounded-xl bg-[#023440] text-[#f0edcc] hover:bg-[#054756] font-bold text-sm sm:text-base transition-all shadow-md"
             >
-              <span>View Complete Scrap Rate Chart (20+ Items)</span>
+              <span>View Complete Scrap Items Catalog (20+ Items)</span>
             </a>
           </div>
         )}
